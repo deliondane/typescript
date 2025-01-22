@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
+import { useTodoDispatch} from '../App';
 
-interface Props {
-  onClickAdd: (text: string) => void;
-}
+// interface Props {
+//   onClickAdd: (text: string) => void;
+// }
 
-const Editor = (props: Props) => {
+// const Editor = (props: Props) => {
+const Editor: React.FC = () => {
+  const dispatch = useTodoDispatch();
   const [text, setText] = useState("");
 
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value)
   };
   const onClickAddButton = () => {
-    props.onClickAdd(text);
+    dispatch.onClickAdd(text);
     setText("");
   }
 

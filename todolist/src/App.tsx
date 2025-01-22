@@ -73,7 +73,8 @@ function App() {
       <TodoStateContext.Provider value={todos}>
         <TodoDispatchContext.Provider value={{onClickAdd, onClickDelete}}>
           <div className="todoInputWrap">
-            <Editor onClickAdd={onClickAdd}/>
+            {/* <Editor onClickAdd={onClickAdd}/> */}
+            <Editor />
           </div>
           <div className="listWrap">
             {/* <Todos items={todos} onClickDelete={onClickDelete}/> */}

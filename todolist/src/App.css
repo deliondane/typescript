@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.App{
+  max-width: 1280px;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+h1{text-align: center;}
+.todoInputWrap{
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.todoInputWrap input{
+  width: 100%;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.todoInputWrap button{
+  width: 50px;
+  border: none;
+  background: palevioletred;
+  color: #222;
+  border-radius: 2px;
+}
+
+.todoItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

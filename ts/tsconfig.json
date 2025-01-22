@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "strict": true //엄격한 모드로 변환
+    },
+    "include": [
+        "scr/**/*.ts" //src폴더 하위의 모든 ts파일을 엄격한 모드로 사용 선언
+    ]
+}
